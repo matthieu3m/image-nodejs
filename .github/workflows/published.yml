@@ -10,7 +10,7 @@
   env:
     REGISTRY: "docker.io" 
     IMAGE_NAME: "matthieu3m/image-nodejs" 
-    TAG: latest
+    TAG: ${{ github.sha }}
          
   
   permissions: write-all
@@ -52,6 +52,6 @@
             subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
             subject-digest: ${{ steps.push.outputs.digest }}
             push-to-registry: true
-            github-token: ${{ secrets.GITHUB_TOKEN }} #
+            github-token: ${{ secrets.GITHUB_TOKEN }}
             
   
