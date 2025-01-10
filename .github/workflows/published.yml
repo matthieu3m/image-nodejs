@@ -8,8 +8,8 @@
         - main
   
   env:
-    REGISTRY: "docker.io"  # L'URL de Docker Hub (ou un autre registre si nécessaire)
-    IMAGE_NAME: "matthieu3m/image-nodejs"  # Le nom de ton image Docker
+    REGISTRY: "docker.io" 
+    IMAGE_NAME: "matthieu3m/image-nodejs" 
     TAG: latest
          
   
